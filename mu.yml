@@ -9,3 +9,9 @@ service:
   healthEndpoint: /
   pathPatterns:
   - /*
+
+## Configure EKS RBAC to bind my IAM user to admin role
+rbac:
+- role: admin
+  users:
+  - casey.lee
