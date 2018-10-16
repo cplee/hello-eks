@@ -1,0 +1,11 @@
+environments:
+- name: acceptance
+  provider: eks
+- name: production
+  provider: eks
+
+service:
+  port: 80
+  healthEndpoint: /
+  pathPatterns:
+  - /*
