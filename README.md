@@ -34,3 +34,10 @@ In order to be able to use `kubectl` with the new EKS cluster, you need to do th
 * Update `mu.yml` to add your IAM username to the `rbac:` section to bind your user to the admin role and push the change to allow mu to deploy the new role bindings.
 * Install `aws-iam-authenticator` as per the [EKS User Guide](https://docs.aws.amazon.com/eks/latest/userguide/configure-kubectl.html) 
 * Create a `kubeconfig` for the EKS cluster as per the [EKS User Guide](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
+
+# Cleanup
+To cleanup all the stacks that mu creates, just run:
+
+```
+mu purge
+```
